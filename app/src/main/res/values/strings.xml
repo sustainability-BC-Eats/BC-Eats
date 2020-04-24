@@ -1,0 +1,35 @@
+<resources>
+    <!--This file contains reference strings that are needed for the text field of a widget (e.g android:text="@string/app_name")
+        Although it is considered best practice to save all strings here, this app saves only the longest texts here.
+        Shorter texts are written directly in the xml widget-->
+
+    <string name="app_name">BC Eats</string>
+
+    <string name="app_summary">BC Eats is an ongoing student lead project that attempts
+         to reduce food waste on campus by notifying students whenever
+         there is free access food from campus events.
+    </string>
+
+    <!--This can be deleted if the java implementation for creating hyperlinks work -->
+    <string name="app_disclaimer">If you are interested in getting involved or have suggestions, please visit our
+        <a ref="https://github.com/sustainability-BC-Eats/BC-Eats">github repository</a>
+        or contact us through our <a ref="sustainability-BC-Eats@gmail.com">email</a>
+    </string>
+
+    <!--Do not delete, this is to populate spinner widget with spinner items-->
+    <string-array name="spinner_array">
+        <item>C Building</item>
+        <item>L Building</item>
+        <item>N Building</item>
+        <item>B Building</item>
+        <item>R Building</item>
+        <item>A Building</item>
+        <item>D Building</item>
+        <item>G Building</item>
+        <item>K Building</item>
+        <item>S Building</item>
+        <item>T Building</item>
+        <item>Student Housing</item>
+    </string-array>
+
+</resources>

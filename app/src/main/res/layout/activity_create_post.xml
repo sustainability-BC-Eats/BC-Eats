@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:gravity="center"
+                android:text="Where are your leftovers?"/>
+
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/banner"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:hint="Title" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="30dp"/>
+
+            <EditText
+                android:id="@+id/room_number_edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/spinner"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="20dp"
+                android:hint="room number e.g. 234"/>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/room_number_edit_text"
+                android:layout_marginTop="40dp"
+                android:text="Additional Description"/>
+
+            <EditText
+                android:id="@+id/comments_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:layout_constraintLeft_toLeftOf="@id/description"
+                app:layout_constraintTop_toBottomOf="@id/description"
+                android:background="@drawable/edit_text_border"
+                android:inputType="textMultiLine" />
+
+            <ImageView
+                android:id="@+id/food_pic_img_view"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                app:layout_constraintLeft_toLeftOf="@id/comments_edit_text"
+                app:layout_constraintTop_toBottomOf="@id/comments_edit_text"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ic_food_pic"/>
+
+            <Button
+                android:id="@+id/upload_food_pic_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/food_pic_img_view"
+                app:layout_constraintBottom_toBottomOf="@id/food_pic_img_view"
+                app:layout_constraintLeft_toRightOf="@id/food_pic_img_view"
+                app:layout_constraintRight_toRightOf="parent"
+                android:text="upload picture"/>
+
+            <Button
+                android:id="@+id/post_listing_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/food_pic_img_view"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintHorizontal_bias=".3"
+                android:layout_marginTop="20dp"
+                android:text="POST"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressText"/>
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressbar"/>
+
+            <Button
+                android:id="@+id/post_cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/post_listing_button"
+                app:layout_constraintBottom_toBottomOf="@id/post_listing_button"
+                app:layout_constraintLeft_toRightOf="@id/post_listing_button"
+                app:layout_constraintRight_toRightOf="parent"
+                android:text="cancel"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

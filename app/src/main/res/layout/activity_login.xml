@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:contentDescription="blue banner"
+        android:background="@color/colorPrimary" />
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imageView"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="Log in to BC Eats"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/app_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:drawablePadding="40dp"
+            android:text="@string/app_summary"/>
+
+        <EditText
+            android:id="@+id/phone_et"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/app_summary"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:hint="phone number" />
+
+        <Button
+            android:id="@+id/login_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone_et"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorAccent"
+            android:text="Sign In"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:id="@+id/app_disclaimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_bt"
+            android:layout_centerHorizontal="true"
+            android:linksClickable="true"
+            android:layout_marginTop="30dp"
+            android:drawablePadding="40dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
