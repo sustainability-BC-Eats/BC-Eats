@@ -4,7 +4,7 @@ Version 1.0
 Authors: Pazuzu Jindrich
 QA tester: Jason Guo, Alicia McChessney
 
-Summary
+Summary:
 BC Eats attempts to reduce food waste by notifying students of free excess food from campus events. 
 
 This version of BC Eats includes:
